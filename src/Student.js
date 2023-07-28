@@ -1,10 +1,11 @@
 
-const Student = () => {
+const Student = (props) => {
+    console.log(props);
     return(
         <div>
-            <h1>Harry</h1>
-            <h3>Age: 25</h3>
-            <h3>County: UK</h3>
+            <h1>{props.firstName}</h1>
+            <h3>{props.age}</h3>
+            <h3>{props.country}</h3>
         </div>   
 )}
 

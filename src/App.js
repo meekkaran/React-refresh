@@ -1,18 +1,43 @@
 import Student from "./Student";
 
 function App(){
-    function print(){
-        return "WebTechTalk"
+    // function showAlert(){
+    //     alert("Welcome to WebTechTalk") 
+    // }
+
+
+    // const request = () => {
+    //     alert("subscribe and like")
+    // }
+    const onTextChange = (event) => {
+        // console.log("Change event is triggered")
+        console.log(event.target.value)
+    }
+
+    let count = 0
+
+    function increment() {
+        count = count + 1
+        console.log(count)
+    }
+
+    function decrement() {
+        count = count - 1
     }
 
     return (
-        <>
-            {/* <h1 style={{color:'white', backgroundColor:'red'}}>Welcome to{print()}.Please subscribe and support</h1>
-            <h2 className="sub-title">Thanks</h2>
-            <label htmlFor="fName">Firstname</label>
-            <input name="fName" maxLength={5} autoFocus={true} placeholder="Enter First Name"/> */}
-        <Student />
-        </>
+        // handling events
+        <div className="App">
+            {/* <input onChange={onTextChange}/> */}
+
+            {/* <button onClick={() => showAlert()}>Click Me</button>
+            <button onClick={request}>Subscribe</button> */}
+
+            <button onClick={decrement}>DECREMENT</button>
+            <div style={{fontSize:"26px", fontWeight:"bold", color:"red"}}>{count}</div>
+            <button onClick={increment}>INCREMENT</button>
+        </div>
+        
     );
 }
 
