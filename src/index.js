@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import ClassComponent from './ClassComponent';
 import App from './App';
+import StateComponent from './StateComponent';
 
 
 let el = document.getElementById("root");
@@ -13,6 +14,7 @@ root.render(
 <>
   <ClassComponent />
   <hr />
-  <App />
+  {/* <App /> */}
+  <StateComponent />
 </>
 ); 
