@@ -15,9 +15,9 @@ root.render(
 <>
   {/* <ClassComponent /> */}
   <hr />
-  {/* <App /> */}
+  <App />
   {/* <StateComponent /> */}
-  <StateComponentFn />
+  {/* <StateComponentFn /> */}
 
 </>
 ); 

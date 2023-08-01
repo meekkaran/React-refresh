@@ -1,11 +1,12 @@
+import styles from './Student.module.css';
 
-const Student = (props) => {
-    console.log(props);
+const Student = ({id, firstName, age, country}) => {
+
     return(
-        <div>
-            <h1>{props.firstName}</h1>
-            <h3>{props.age}</h3>
-            <h3>{props.country}</h3>
+        <div className= {styles.student}>
+            <h1 style={{color:'red'}}>{firstName}</h1>
+            <h3>Age: {age}</h3>
+            <h3>Country: {country}</h3>
         </div>   
 )}
 
