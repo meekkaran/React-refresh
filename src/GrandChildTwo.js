@@ -1,7 +1,10 @@
+import MyContext from "./MyContext";
+import { useContext } from "react";
+
 const GrandChildTwo = (props) => {
     return  (
         <div className="grandchild second">
-            <h3>Grand child Two Component</h3>
+            <h3>Grand child Two Component - {value}</h3>
             <div className="message">
             {props.isSubscribed ? (
                 <div className="greenColor">
