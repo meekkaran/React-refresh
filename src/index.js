@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ClassComponent from './ClassComponent';
 import App from './App';
-import StateComponent from './StateComponent';
-import StateComponentFn from './StateComponentFn';
+// import 'bootstrap/dist/css/bootstrap.css';
+
+// import ClassComponent from './ClassComponent';
+// import StateComponent from './StateComponent';
+// import StateComponentFn from './StateComponentFn';
 
 
 let el = document.getElementById("root");
